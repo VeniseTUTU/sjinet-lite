@@ -1,0 +1,172 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+
+
+
+body{
+    margin: 0;padding: 0;
+    width: 100%; height: 100%;
+    overflow-x:hidden;
+}
+
+.overlay{
+  position: fixed;
+  top:0;
+  padding: 40px 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8) center center no-repeat;
+  z-index:3000;
+  overflow:auto;
+}
+
+.modalForm{
+  position: relative;
+  padding: 40px 40px;
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: $primaryfont1;
+  z-index:2000;
+  border-radius: 3px;
+  
+}
+.formFieldCont{
+    width: 100%;
+    margin-bottom: 30px;
+    
+    ul{
+     float: left;
+    
+    li{
+	font-size: 30px;
+	margin: 0 10px 0 0;
+    }
+    }
+    input{
+	float:left;
+	border: 1px solid #333;
+	padding: 10px 5px;
+	background-color: #fff;
+	width:100%;
+    }
+}
+.formFieldCont:after,.formCap:after,.forgPass:after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.loginSumitButt {
+  margin-top: 0px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color:$buttonColor;
+  padding: 8px 20px;
+  color: #fff;
+  
+  &:hover{
+    background-color: $buttonColor-hover;
+  }
+}
+.loadLogin {
+  padding: 6px 20px;
+  border-radius: 3px;
+  border: 1px solid $buttonColor;
+  text-align: center;
+  width: 90px;
+}
+.loadVerimail {
+  padding: 6px 20px;
+  border-radius: 3px;
+  border: 1px solid $buttonColor;
+  text-align: center;
+  width: 90px;
+}
+
+.formCap{
+  width: 100%;
+   margin-bottom: 10px;
+   color: #606060;
+}
+.formCapleft{
+    float: left;
+    font-size: 30px;
+}
+.formCapright{
+    float: right;
+    font-size: 11px;
+    margin-top: 20px;
+}
+.hotLink{
+    color: $blueLink;
+    cursor: pointer;
+    &:hover{
+	color: $blueLink-hover;
+	text-decoration: underline;
+    } 
+}
+.forgPass{
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.forgPassRight{
+    float: right;
+    font-size: 11px;
+    
+}
+.span{
+   font-size: 12px;
+   color: red; 
+  }
+.softStrip{
+  font-size: 12px;
+  padding: 2px 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(133, 194, 168);
+  color: rgb(92, 197, 153);
+  background-color: rgb(217, 243, 232);
+}
+.softStrip2{
+  font-size: 12px;
+  padding: 2px 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(104, 195, 236);
+  color: rgb(28, 164, 228);
+  background-color: rgb(198, 225, 238);
+}
+.closeButtn{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #7c7c7c;
+}
+
+
+@media (min-width: 750px) and (max-width:1100px) {
+
+}
+
+/************* style display for screen not more than 739px and min of 510px    Breakpoint 3  ******/
+@media (min-width: 550px) and (max-width:750px) {
+
+}
+
+
+
+/************* style display for screen not more than 509px and min of 300px     Breakpoint 4  ******/
+@media (min-width: 200px) and (max-width:550px) {
+
+
+.modalForm{
+ padding: 40px 20px;
+  width: 95%;
+}
+
+}

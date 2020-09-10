@@ -1,0 +1,326 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+
+.Billingview{
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #d8d6d6;
+  
+  &__title{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $primaryfont3;
+
+    @media (min-width: 200px) and (max-width:550px) {
+      font-size: 14px;
+    }
+  }
+
+  &__activestatus{
+
+    float: right;
+    padding: 2px 10px;
+    border-radius: 15px;
+    font-family: $primaryfont3;
+    font-size: 11px;
+    color: #fff;
+    background-color: green;
+  }
+
+  &__Subnotice{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-family: $primaryfont3;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(245, 218, 222);
+    background-color: rgb(252, 220, 225);
+    color: rgb(221, 53, 81);
+  }
+
+  &__expiredtatus{
+    float: right;
+    padding: 2px 10px;
+    border-radius: 15px;
+    font-family: $primaryfont3;
+    font-size: 11px;
+    color: #fff;
+    background-color: rgb(221, 53, 81);
+  }
+
+  &__renewbutton{
+    border: 1px solid blue;
+  }
+
+  &__subId {
+    clear: both;
+    color: #8f8f8f;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    border-bottom: 2px solid #e6e6e6;
+    font-weight: 600;
+  }
+
+  &__details{
+    padding: 15px 0;
+    border-bottom: 2px solid $subwhite;
+    table{
+      width: 100%;
+      td{
+        text-align: left;
+        font-size: 14px;
+        font-weight: 600;
+        color: #575757;
+        font-family: $primaryfont3;
+        @media (min-width: 200px) and (max-width:550px) {
+          font-size: 11px;
+        }
+      }
+      .td1{
+        width: 30%; padding-right: 70px;
+      }
+      .td2{
+        width: 70%;
+      }
+      .td3{
+        padding-right: 20px;
+      }
+    }
+  }
+
+  &__more{
+    margin-top: 30px;
+    button{
+      float: left;
+      font-size: 14px;
+      padding: 5px 12px;
+      border: none;
+      border-radius: 3px;
+      background-color: #44ac4c;
+      color: #fff;
+      cursor: pointer;
+      font-family: $primaryfont3;
+    }
+    button:hover{
+      background-color: #5faf65;
+    }
+    
+    div{
+      float: right;
+      color: #009eea;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: $primaryfont3;
+      cursor:pointer;
+    }
+
+    &::after{
+      display: table;
+      clear: both;
+      content: '';
+    }
+
+  }
+
+  &__middIcon{
+    font-size: 20px;
+    padding-right: 0px;
+    padding-top: -7px;
+    font-weight: bold;
+  }
+
+  
+  
+  &__morePanel{
+    margin-top: 30px;
+    padding: 12px 5px;
+    color: #009eea;
+    font-family: $primaryfont3;
+    border: 1px solid $subwhite;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__subscExtDetail{
+    padding: 20px;
+    background-color:$grey;
+    color: #464646;
+    font-size: 12px;
+    font-family: $primaryfont3;
+    line-height: 18px;
+    
+
+    &:after{
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+
+  &__invLeft{
+    float: left;
+    span{
+      font-size: 14px;
+      font-weight: 600;
+    }
+    i{
+      font-size: 11px;
+      font-weight: normal;
+    }
+  }
+
+  &__invRight{
+
+    padding: 3px 8px;
+    border-radius: 15px;
+    background-color: green;
+    font-family: $primaryfont3;
+    font-size: 12px;
+    color: #fff;
+    float: right;
+    border:none;
+    cursor: pointer;
+  }
+  .invRight:hover{
+    background-color:#009d00;
+  }
+
+  &__cancelCon{
+    padding: 10px;
+    margin-top: 30px;
+    font-family: $primaryfont3;
+    border: 1px solid $subwhite;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #eeeeee;
+    color: #626262;
+
+    @media (min-width: 200px) and (max-width:550px) {
+      font-size: 10px;
+      text-align: center;
+    }
+    
+  }
+  &__cancelCaveat{
+    padding: 10px;
+    font-family: $primaryfont3;
+    border: 1px solid $subwhite;
+    font-size: 12px;
+    text-align: center;
+    color: #626262;
+  }
+  &__hyperLink{
+    color: #009eea;
+
+    &:hover{
+    color: #39b3eb;
+    }
+  }
+
+  &__transactions{
+    font-family: $primaryfont3;
+    clear: both;
+    margin-top: 30px;
+
+    li{
+      padding: 10px 10px;
+      background-color: #f7f4f4;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+
+     &:hover{
+      background-color: #e9e7e7;
+    }
+    }
+
+    &__type{
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8f8f8f;
+
+    span{
+      font-size: 10px; 
+      color: #8f8f8f;
+    }
+    }
+
+    &__details{
+      display:flex;
+     flex-flow: row nowrap;
+     justify-content: space-between;
+
+     div{
+      color: #8f8f8f;
+       font-size: 10px;
+       width: 30%;
+
+       span{
+        font-weight: bold;
+      }
+     }
+    }
+  }
+ 
+ 
+  &:after{
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+
+.billingCont{
+
+  border-radius: 4px;
+  border: 1px solid $subwhite;
+  padding: 20px;
+  margin-bottom: 200px;
+  border-radius: 4px;
+  border: 1px solid $subwhite;
+  padding: 20px;
+  margin-bottom: 200px;
+
+  &:after{
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+
+.billingCont2{
+  @extend .billingCont;
+  background-color:#fff;
+  margin-bottom: 20px;
+}
+
+.middIcon, .middIcon2, .middIcon3 {
+  font-size: 18px;
+  padding-right: 4px;
+  padding-top: -7px;
+  font-weight: bold;
+}
+
+.middIcon2 {
+  font-size: 30px;
+  padding-right: 0px; }
+
+.middIcon3{
+  @extend .middIcon;
+  font-size: 14px;
+  padding-right: 2px;
+}

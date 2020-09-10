@@ -1,0 +1,55 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+.thearterSpinner {
+	background-color: #000;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:space-evenly;
+	justify-items: center;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 3100;
+	padding-top: 15%;
+
+	@media (min-width: 200px) and (max-width:550px) {
+		padding-top: 23%;
+	  }
+
+	&__content{
+		position: relative;
+		line-height: to-rem(50px);
+
+		&:before{
+			animation: spin .75s linear infinite;
+			border: 3.5px solid rgba(rgb(176, 176, 194), 0.25);
+			border-radius: 50%;
+			border-right-color: rgb(205, 205, 209);
+			box-sizing: border-box;
+			content: "";
+			display: inline-block;
+			
+			left: 0;
+			right: 0;
+			height: 30px;
+			width: 30px;
+			margin: 0 auto;
+		}
+
+	}
+}
+
+@keyframes spin {
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}
+
+ 

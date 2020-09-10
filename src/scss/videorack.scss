@@ -1,0 +1,103 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+
+.crumbTitleCont{
+  width:100%;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  
+
+  &:after{
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+.subCategoryTitle{
+  float: left;
+  width: 200px;
+  font-size: 16px;
+  font-family: $primaryfont;
+  color: $subwhite;
+  padding-bottom: 5px; 
+  
+  
+}
+.TheaterTitle{
+  float: left;
+  width: 200px;
+  font-size: 14px;
+  font-family: $primaryfont;
+  color: rgb(134, 133, 133);
+  padding-bottom: 5px; 
+  
+  
+}
+
+.videoRack{
+  //position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition:  0.8s cubic-bezier(0.77,0,0.175,1);
+
+  .active{
+    cursor:grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+  }
+  
+}
+
+.arrowLeft{
+  position: absolute;
+  left:-40px;
+  top: 40%;
+
+  &:hover{
+   opacity: 0.5;
+  }
+}
+.arrowRight{
+  position: absolute;
+  right:-40px;
+  top: 40%;
+  &:hover{
+    opacity: 0.5;
+   }
+} 
+
+.videoRack_inner{
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+   
+
+@media (min-width: 750px) and (max-width:1100px) {
+
+   
+
+}
+
+/************* style display for screen not more than 739px and min of 510px    Breakpoint 3  ******/
+@media (min-width: 550px) and (max-width:750px) {
+
+ 
+
+}
+
+
+
+/************* style display for screen not more than 509px and min of 300px     Breakpoint 4  ******/
+@media (min-width: 200px) and (max-width:550px) {
+
+}

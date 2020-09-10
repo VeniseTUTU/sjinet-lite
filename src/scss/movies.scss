@@ -1,0 +1,46 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+.Movieview{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  
+
+  &__header{
+    width:100%;
+   
+  }
+
+  &__content{
+    height: 75%;
+    
+  }
+
+  &__balancer{
+    width: $pageWidth;
+    margin: auto;
+
+    &:after{
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+
+}
+
+
+
+
+
+ @media (min-width: 200px) and (max-width:550px) {
+
+  .icon-descrip{
+    float:right;
+    width: 150px;
+  }
+   
+
+}

@@ -1,0 +1,73 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+.LibOverlay{
+  width:50px;
+  height:50px;
+  padding: 5px;
+  border-radius:100%;
+  vertical-align:middle;
+  position: absolute;
+  right:0;
+  left: 40%;
+  top: 40%;
+  bottom:0;
+  z-index: 5000;
+  text-align:center;
+  background-color: #383838;
+  border: 2px solid #606060;
+  cursor:pointer;
+  
+  span{
+    font-size: 28px;
+    margin-top:5px;
+    color: red;
+    
+  }
+}
+.LibOverlay:hover{
+  box-shadow: 2px 2px 20px #ff1515;
+} 
+.LibOverlayPr{
+  @extend .LibOverlay;
+  span{
+    color: #676767;
+    
+  }
+}
+
+
+@media (min-width: 750px) and (max-width:1100px) {
+
+   
+
+}
+
+/************* style display for screen not more than 739px and min of 510px    Breakpoint 3  ******/
+@media (min-width: 550px) and (max-width:750px) {
+
+  
+}
+
+
+
+/************* style display for screen not more than 509px and min of 300px     Breakpoint 4  ******/
+@media (min-width: 200px) and (max-width:550px) {
+
+  .LibOverlay{
+    width:50px;
+    height:50px;
+    padding: 5px;
+    border-radius:100%;
+    vertical-align:middle;
+    position: absolute;
+    right:0;
+    left: 35%;
+    top: 28%;
+    bottom:0;
+  }
+
+   
+
+}

@@ -1,0 +1,232 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+
+.crumbRight{
+  float: right;
+  
+  li{
+    float: left;
+    cursor: pointer;
+    div{
+      width:60px;
+      height:40px;
+      margin-bottom: 10px;
+      img{
+      width:100%;
+      height:100%;
+      }
+      
+    }
+    
+  }
+}
+
+
+.mainHeadWrap{
+  width: 100%;
+  margin: 40px 0 0 0;
+}
+.mainHeadWrap:after{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.menu-iconn{
+  margin-top:5px;
+  float: left;
+  li{
+    float: left;
+    width: 50px;
+    font-size: 30px;
+    color: $subwhite2;
+    cursor: pointer;
+  }li:hover{
+    color: white;
+  }
+  li:focus{
+    color: white;
+  }
+  
+  }
+
+.menu-iconn:after{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.thtMenu-iconn{
+  @extend .menu-iconn;
+  margin-top: 0px;
+  padding-top: 5px;
+  overflow: hidden;
+  float: left;
+  
+  li{
+    
+    width: 30px;
+    font-size: 30px;
+    margin-right: 20px;
+    color: #3c3c3c;
+    
+  }li:hover{
+    color: #000;
+  }
+  li:focus{
+    color: white;
+  }
+}
+.thtMenu-iconn:after{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.thtBBMenu-iconn{
+  @extend .thtMenu-iconn;
+  li{
+font-size:20px;
+  }
+}
+.searchCont{
+  width: 60%;
+  position: relative;
+
+  
+}
+.searchCont:after{
+  display: table;
+  clear: both;
+  content: '';
+}
+.inputCont{
+  input{
+    position:relative;
+    
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 60px 10px 20px;
+    font-size: 16px;
+    font-family: $primaryfont;
+  }
+  ul{
+    width:100%;
+    clear:both;
+    position:absolute;
+    z-index:400;
+    li{
+      width:100%;
+      font-family: $primaryfont;
+      padding: 10px 5px;
+      background-color: #fff;
+      cursor: pointer;
+      color: #515151;
+      border-top: 1px solid #515151;
+      font-weight: bold;
+    }
+    li:hover, li:focus{
+      
+      background-color: #f0f0f0;
+    }
+    a:hover, a:focus{
+      text-decoration: none;
+    }
+  }
+}
+.avaTar{
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  padding:none;
+  
+  img{
+  width: 100%;
+  height: 100%;
+  margin-top:-10px;
+  }
+}
+.hdshortMenu{
+  margin-top: 15px;
+  width: 150px;
+  background-color:#fff;
+  box-shadow: 2px 2px 3px #d6d6d6;
+  position: absolute;
+  z-index: 1000;
+  font-size: 12px;
+  
+  ul{
+    width:100%;
+    li{
+      width:100%;
+      padding:7px;
+      font-size:15px;
+      color:#333;
+    }
+    li:hover{
+      color:#333;
+      background-color: #ebebeb;
+    }
+    span{
+      font-size:18px;
+      padding-right: 8px;
+    }
+  }
+  
+}
+
+.searchIconHeader{
+  width: 60px;
+  position:absolute;
+  right:0px;
+  top: 0px;
+  margin-top:7px;
+  font-size: 25px;
+  
+  color: #6c6c6c;
+}
+.searchIconHeader:hover{
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+
+
+@media (min-width: 750px) and (max-width:1100px) {
+
+   
+
+}
+
+/************* style display for screen not more than 739px and min of 510px    Breakpoint 3  ******/
+@media (min-width: 550px) and (max-width:750px) {
+
+  .searchCont{
+    width: 80%;
+  }
+}
+
+
+
+/************* style display for screen not more than 509px and min of 300px     Breakpoint 4  ******/
+@media (min-width: 200px) and (max-width:550px) {
+
+  .mainHeadWrap{
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+.mobb{
+  display:none;
+}
+
+.searchCont{
+  width: 80%;
+}
+   
+
+}

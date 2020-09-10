@@ -1,0 +1,73 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+
+.Toast{
+  width: 250px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px !important;
+  font-family: $primaryfont;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @media (min-width: 200px) and (max-width:550px) {
+
+    font-size: 11px !important;
+    width: 200px;
+  }
+}
+
+.RoundedToast{
+  
+  position: absolute;
+  right:0;
+  left: 0;
+  margin: 20% auto 0 auto;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 10px;
+  font-family: $primaryfont;
+  z-index: 2000;
+  
+  
+}
+
+.OK{
+  background-color: rgba(27, 138, 202, 0.979);
+}
+.BAD{
+  background-color: rgba(247, 88, 88, 0.979);
+}
+
+.successRes{
+  color: #fff;
+  border: rgba(27, 138, 202, 0.979);
+  background-color: rgba(94, 176, 223, 0.979);
+}
+.successResGrn{
+  color: #fff;
+  border: rgba(87, 212, 135, 0.979);
+  border-radius: 30px;
+  padding: 8px 15px; 
+  background-color: rgba(131, 216, 163, 0.979);
+}
+.errorRes{
+  border-radius: 30px;
+  padding: 8px 15px; 
+  color: rgb(104, 28, 28); 
+  border: 1px solid rgb(248, 150, 150);
+  background-color: #f5b5be;
+}
+
+
+
+
+
+@media (min-width: 200px) and (max-width:550px) {
+
+
+}

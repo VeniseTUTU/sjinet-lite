@@ -1,0 +1,222 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+.billingCont{
+  border-radius: 4px;
+  border: 1px solid $subwhite;
+  padding: 20px;
+  margin-bottom: 200px;
+
+  &:after{
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+.billingCont2{
+  @extend .billingCont;
+  background-color:#fff;
+  margin-bottom: 20px;
+}
+
+.formWrapper{
+  width: 100%;
+  
+  &:after{
+    display: table;
+    clear: both;
+    content: '';
+  }
+   
+       .bnm{
+         float: left;
+         width: 48%;
+         margin-top: 20px;
+         margin-right: 1%;
+       }
+       section{
+        width: 100%;
+      }
+     
+       label{
+         width:100%;
+        font-size: 12px;
+        font-family: $primaryfont3;
+        font-weight: 600;
+       }
+       input{
+        width:100%;
+        padding: 5px 10px;
+        border-radius: 3px;
+        border: 1px solid $subwhite2;
+        margin-top: 5px;
+        box-shadow: 0px 1px 1px #d6d6d6;
+       }
+       select{
+        width:100%;
+        padding: 5px 10px;
+        border-radius: 3px;
+        border: 1px solid $subwhite2;
+        margin-top: 5px;
+        box-shadow: 0px 1px 1px #d6d6d6;
+        
+       }
+       textarea{
+        padding: 30px 0;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid $subwhite2;
+        margin-top: 5px;
+        box-shadow: 0px 1px 1px #d6d6d6;
+       }
+       button{
+        background-color: $blueLink;
+        padding: 5px 13px;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 11px;
+        font-family: $primaryfont3;
+        cursor: pointer;
+        margin-top: 15px;
+       }
+       button:hover{
+        background-color: $blueLink-hover;
+       }
+      
+      .gutter{
+        padding-right: 20px;
+      }
+    
+   
+}
+
+.sending-button{
+  clear: both;
+  width: 97px;
+  text-align: center;
+  background-color: $blueFaded;
+  padding: 5px 13px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+  font-family: $primaryfont3;
+  cursor: pointer;
+  margin-top: 15px;
+ }
+
+.formTitle{
+  font-size: 13px;
+  font-weight: bold;
+  font-family: $primaryfont3;
+}
+
+.changeEmailCont{
+  @extend .billingCont;
+  float: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color:#fff;
+  width: 50%;
+}
+.changePasswordCont{
+  @extend .changeEmailCont;
+  float: right;
+  width: 46%;
+  margin-left: 20px;
+}
+.changePasswordCont:after{
+  display: table;
+  clear: both;
+  content: '';
+}
+.changeEmailWrapper{
+  @extend .formWrapper;
+  font-family: $primaryfont3;
+  
+  .div1{
+    margin-top: 10px;
+    font-size: 12px;
+    
+  }
+  .div2{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+.changePasswordWrapper{
+  @extend .formWrapper;
+  
+    .bnm{
+      float: left;
+      width: 100%;
+      margin-top: 20px;
+      margin-right: 1%;
+    }
+  
+  td{
+     width:100%;
+  }
+}
+.delAccountCont{
+  @extend .changeEmailCont;
+}
+.delAccountWrapper{
+  @extend .changeEmailWrapper;
+}
+.changeEmailWrapper{
+  @extend .formWrapper;
+  font-family: $primaryfont3;
+  
+  .div1{
+    margin-top: 10px;
+    font-size: 12px;
+    
+  }
+  .div2{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+
+@media (min-width: 750px) and (max-width:1100px) {
+
+   
+
+}
+
+/************* style display for screen not more than 739px and min of 510px    Breakpoint 3  ******/
+@media (min-width: 550px) and (max-width:750px) {
+
+  
+}
+
+
+
+/************* style display for screen not more than 509px and min of 300px     Breakpoint 4  ******/
+@media (min-width: 200px) and (max-width:550px) {
+
+  .formWrapper{
+    width: 100%;
+      
+     
+         .bnm{
+           float: left;
+           width: 100%;
+         }
+        }
+
+        .changeEmailCont{
+          width: 100%;
+        }
+        .changePasswordCont{
+          width: 100%;
+         
+        }
+
+}

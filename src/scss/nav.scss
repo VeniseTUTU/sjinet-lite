@@ -1,0 +1,97 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+.CategoryTab{
+  
+  margin-top: 2rem;
+  font-family: $primaryfont;
+  color: white;
+
+  &__hotTab{
+    border-color: $primarycolor !important;
+    color: $primarycolor;
+  }
+
+  &__balancer{
+    width: $pageWidth;
+    margin: auto;
+
+    &:after{
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+  
+  ul{
+    width: 100%;
+    height: 35px;
+    overflow-x: auto;
+    white-space: nowrap;
+    
+    li{
+      display: inline-block;
+      margin-right: 25px;
+      opacity: .8;
+      transition: ease-out .3s;
+      font-weight: 600;
+
+      a{
+        color: white;
+        border: 1px solid white;
+      padding: 3px 8px;
+      border-radius: 15px;
+      display: block;
+      }
+      
+      a:hover{
+        color: $primarycolor;
+        text-decoration: none;
+        border: 1px solid $primarycolor;
+      }
+      a:active,a:visited{
+        text-decoration: none;
+        border:none;
+      }
+    }
+    li:hover{
+      cursor: pointer;
+      
+      opacity: 2;
+      transition: ease-in .4s;
+    
+     
+    }
+    &:after{
+      display: table;
+      clear: both;
+      content: '';
+      }  
+  }
+  
+}
+
+
+@media (min-width: 750px) and (max-width:1100px) {
+
+   
+
+}
+
+/************* style display for screen not more than 739px and min of 510px    Breakpoint 3  ******/
+@media (min-width: 550px) and (max-width:750px) {
+
+  
+}
+
+
+
+/************* style display for screen not more than 509px and min of 300px     Breakpoint 4  ******/
+@media (min-width: 200px) and (max-width:550px) {
+
+  
+
+   
+
+}

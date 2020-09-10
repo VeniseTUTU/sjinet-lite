@@ -1,0 +1,34 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+  
+  //ANIMATIONS
+.vidrack-appear, .details-appear, .toast-appear{
+  opacity: 0;
+}
+.vidrack-appear.vidrack-appear-active, .details-appear.details-appear-active,
+.toast-appear.details-appear-active{
+  opacity: 1;
+  transition: opacity 600ms ease-in;
+}
+.vidrack-enter, .details-enter, .toast-enter{
+  opacity: 0;
+}
+.vidrack-enter.vidrack-enter-active, .details-enter.details-enter-active,
+.toast-enter.details-enter-active{
+  opacity: 1;
+  transition: opacity 400ms ease-in;
+}
+.vidrack-leave, .details-leave, .toast-leave{
+  opacity: 1;
+}
+.vidrack-leave.vidrack-active, .details-leave.details-active,
+.toast-leave.details-active{
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+}
+    
+ 
+  
+

@@ -1,0 +1,299 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+h1,h2,h3,h4,h5,h6,img,p,table,tr,td,span,strong,label,input,select,section,div,header,textarea{margin:0; padding:0;}
+a img{border:none;}
+a{text-decoration:none; margin:0; padding:0; outline:none; color: inherit;}
+ul,li{list-style-type: none; padding: 0; margin: 0;}
+table td {vertical-align: top;}
+html {box-sizing: border-box;}
+*,*:before,*:after {box-sizing: inherit;} 
+
+
+
+$primaryfont: 'Jura', sans-serif;
+$primaryfont2: 'Ubuntu', sans-serif;
+$primaryfont3: 'Open Sans', sans-serif;
+$exp1: 'Russo One', sans-serif;
+$exp2: 'Barlow', sans-serif;
+$exp3: 'Alegreya Sans', sans-serif;
+$exp4: 'Palanquin', sans-serif;
+
+
+$primarycolor: #ff8000;
+$primarycolor2: #ff8000; $primarycolor2-hover: #ff8c1a; $primarycolor2-hover2: #ffa346;
+$primarycolor3:#00557d; $primarycolor3-hover: #0073aa;
+$primarycolor3: #1a8cff; $primarycolor2-hover: #ff8c1a;
+$subwhite: #e6e6e6;
+$subwhite2: #c5c5c5;
+$grey: #f8f8f8;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+
+
+
+
+
+
+
+.container{
+  width: 100%;
+  padding: 0;
+  margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+.progress{
+  
+      div{
+        width: 100%;
+        height: 3px;
+        background-color: #dadada;
+       
+        div{
+            width: 50%;
+            height: 3px;
+            background-color: $primarycolor2;
+        }
+        }
+}
+
+
+
+
+
+
+
+
+.viewMoreCont{
+  float: right;
+  width: 83px;
+  
+}
+.icon-descrip{
+  float:right;
+  width: 250px;
+  cursor: pointer;
+  select{
+    width:100%;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 20px;
+    font-family: $primaryfont;
+     color: #6b6b6b;
+    option{
+      font-size: 12px;
+      font-family: $primaryfont;
+      padding: 5px 0;
+      color: #5d5d5d;
+    }
+  }
+  
+}.icon-descrip section:hover{
+  color: white;
+}
+.icon-descrip:after{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+
+
+
+
+.subId{
+  clear:both;
+  color: #8f8f8f;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-family: $primaryfont3;
+  font-size: 12px;
+  border-bottom: 2px solid $subwhite;
+  font-weight: 600;
+}
+
+
+.middIcon{
+  font-size: 18px;
+  padding-right: 4px;
+  padding-top: -7px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.noVisible{
+      visibility: hidden;
+  }
+
+
+
+.dsl-title{
+  font-family: $primaryfont2;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: #585858;
+  float:left;
+  
+}
+.registerWrapper{
+  width: 80%;
+  margin: 0 auto 30px auto;
+  padding: 0;
+  
+  label{
+    margin-top: 25px;
+    font-size: 14px;
+    font-family :$primaryfont3;
+  }
+  p{
+    color:red;
+    font-size:11px;
+  }
+  input{
+        width: 100%;
+        padding: 13px 10px;
+        border-radius:none;
+        border: 1px solid $subwhite2;
+        margin-top: 2px;
+        font-size: 14px;
+        font-family :$primaryfont3;
+        
+       }
+       select{
+        width: 100%;
+        padding: 13px 10px;
+        border-radius: 3px;
+        border: 1px solid $subwhite2;
+        margin-top: 2px;
+        font-family :$primaryfont3;
+       }
+       form{
+    width:100%;
+  }
+  
+  table,tr{
+    width:100%;
+  }
+  .fullwidth{
+    width:100%;
+  }
+}
+  
+.subformWrapper{
+  width:100%;
+  padding: 40px 0 0 0;
+  
+}
+.dsl-modal-header{
+  border: 1px solid #333;
+}
+.dsl-close{
+  float:right;
+}
+
+
+.fieldWrap{
+  position: relative;
+  margin-bottom: 15px;
+  span{
+    color:$primarycolor3;
+  }
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+  top:2px;
+  left: 10px;
+  font-size: 11px;
+  opacity: 1;
+}
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 20px;
+  transition: 0.2s ease all;
+  font-family: $primaryfont2;
+}
+}
+.loginsubm input[type=submit]{
+    width: 220px;
+    text-align: center;
+    padding:  13px 10px;
+    font-size: 14px;
+    background-color: $primarycolor3-hover;
+    border: none;
+    border: 1px solid $primarycolor3;
+    border-radius: 3px;
+    color: #ffffff;cursor: pointer;
+    font-family: $primaryfont2;
+}
+.loginsubm input[type=submit]:hover{
+    background-color: $primarycolor3;
+}
+
+.loginFieldIdle{
+    width: 100%;
+    text-align: center;
+    padding:  10px 10px;
+    font-size: 14px;
+    background-color: #fcfefd;
+    border: 1px solid #85e0b5;
+    border-radius: 3px;
+    color: #ffffff;cursor: pointer;
+    font-family: $primaryfont2;
+}
+.padTd{
+  padding-right: 5px;
+}
+.caVeatReg{
+  width: 250px;
+  margin: 20px auto -20px auto;
+  font-size: 12px;
+  text-align: center;
+  font-family: $primaryfont3;
+  line-height: 17px;
+}
+.centerButton{
+  text-align: center;
+}
+
+
+
+
+.mpDonorsMessage .border-notch{
+  border-bottom-color: #dbdbdb;
+  top:-11px;
+}
+
+
+
+.noResult{
+  color: white;
+  font-style: italic;
+}
+.noResult2{
+  color: #333;
+  font-style: italic;
+}
+
+
+
+

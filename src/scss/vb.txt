@@ -1,0 +1,118 @@
+import React, {Component} from "react";
+import store from 'storejs';
+import { NavLink, Link, withRouter } from 'react-router-dom';
+import VideoPlayer from '../uiSources/videoplayer';
+import '../../scss/theater.scss';
+const BASE_URL = process.env.USE_BASE_URL;
+
+ const Theater = () =>{
+        
+  
+const userId = store.get('user').userid;
+//const videoSource = 'app/videos/'+item.trailerUrl; //change to variable
+
+
+const videoJsOptions = {
+      userId: userId,
+      //itemId: item.id,
+      autoplay: false,
+      controls: true,
+      fill: true,
+      html5: {
+        hls: {
+          smoothQualityChange: true, //changes triggered via the representations API
+          cacheEncryptionKeys: false
+        }
+      }
+           
+    }   
+
+
+
+        return(
+       
+<section className="TheaterWrapper">
+
+  <section className="TheaterWrapper__topRow">
+    
+    <section className="TheaterWrapper__titleBar">
+
+    <section className="thtWedge">
+
+    <ul className="TheaterWrapper__leftContent">
+        <li><span className="gg pe-7s-angle-left"></span></li>
+        <li>itemTitle <br/><span>productionYear</span></li>
+    </ul>
+
+    <ul className="TheaterWrapper__rightContent">
+        <li>Queue (4)</li>
+        
+    </ul>
+
+    </section>
+    </section>
+
+	<section className="thtbodWrapper">
+            <section className="thtWedge">
+
+               <VideoPlayer { ...videoJsOptions } />
+                       
+                <section className="materailCont">
+                    <div className="materialLeft">
+                        <ul className="vidTitleCont">
+                            <li className="vidTitleCont__left">productionCompany</li>
+                            <li className="vidTitleCont__right">itemTitle<span> &bull; Mendies</span></li>
+                        </ul>
+                        <ul className="vidEngage">
+                            
+                            <li><span className="pe-7s-info"></span> Details</li>
+                            <li><span className="pe-7s-comment pe-va"></span> Comments (58)</li>
+                            <li><span className="pe-7s-paper-plane pe-va"></span> Likes</li>
+                            <li><span className="pe-7s-share pe-va"></span> Share</li>
+                        </ul>
+                    </div>
+                    
+                </section>
+               
+            </section>
+    </section>
+
+    </section>
+
+    <section className="TheaterWrapper__bottomRow">
+    <section className="subthtbodWrapper">
+            <section className="thtWedge">
+                <div className="thtRackTitle">
+                    <h4>EPISODES</h4>
+                    <div> 20 Videos</div>
+                </div>
+                
+                <div className="vidthtWrapper">
+                
+                </div>
+
+                <div className="thtRackTitle">
+                    <h4>UP NEXT</h4>
+                    <div> 20 Videos</div>
+                </div>
+                
+                <div className="vidthtWrapper">
+                
+                </div>
+               
+                
+                
+            </section>
+    </section>
+    </section>
+
+</section>
+  
+    );
+    
+
+}
+
+export default Theater;
+
+

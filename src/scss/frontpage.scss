@@ -1,0 +1,142 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+@import "../stylesDef/index";
+
+body{
+   margin: 0;padding: 0;
+   width: 100%; height: 100%;
+   
+ }
+
+ .indexPad{
+   width:100%;
+  height: 100vh;
+  background: url("/src/images/sjmovis-lifestyle-family-watching-tv-parents-kids.jpg") center/cover;
+ }
+ 
+ .balancer{
+     width: $pageWidth;
+     margin: auto;
+ }
+ .balancer:after{
+   display: table;
+   clear: both;
+   content: '';
+ }
+ .wrapHomelinks{
+   margin-top: 40px;
+ }
+ .leftLinks{
+   float: left;
+   li{
+     font-size: 20px;
+     color: #fff;
+     cursor: pointer;
+     font-family: $exp3;
+     font-weight:bold;
+   }
+   li:hover{
+     font-size: 20px;
+     color: #fff;
+     color: $subwhite2;
+   }
+ }
+ .cLogo{
+   float: right;
+   width: 80px;
+   height: 55px;
+   img{
+     width: 100%;
+   height: 100%;
+   cursor: pointer;
+   }
+ }
+
+ .homeTop{
+  position: absolute;z-index: 60; width: 100%;
+}
+
+ .homeBottom{
+   position: absolute;
+   bottom: 100px;
+   z-index: 60;
+   text-align: center;
+   width:100%;
+   
+ 
+   p{
+     font-size: 14px;
+     width: 400px;
+     font-family: $primaryfont3;
+     font-weight: none;
+     color: $subwhite2;
+     margin: 15px auto 0 auto;
+   }
+   button{
+     border: none;
+     background-color: #ff8000;
+     border-radius: 4px;
+     padding: 15px;
+     font-size: 20px;
+     margin-top: 20px;
+     font-family: $exp4;
+   }
+   button:hover{
+     background-color: #ff9122;
+   }
+ 
+ }
+ .wlcBigFont{
+   font-size: 40px;
+   color: #fff;
+   width: 100%;
+   text-align: center;
+   line-height: 20px;
+   letter-spacing: 2px;
+   font-family: $exp1;
+   
+   }
+   
+
+@media (min-width: 750px) and (max-width:1100px) {
+
+   
+
+}
+
+/************* style display for screen not more than 739px and min of 510px    Breakpoint 3  ******/
+@media (min-width: 550px) and (max-width:750px) {
+
+    
+}
+
+
+
+/************* style display for screen not more than 509px and min of 300px     Breakpoint 4  ******/
+@media (min-width: 200px) and (max-width:550px) {
+
+   .homeBottom{
+          
+      p{
+        width: 95%;
+        margin: 15px auto 0 auto;
+      }
+      button{
+         border: none;
+         background-color: #ff8000;
+         border-radius: 4px;
+         padding: 15px;
+         font-size: 16px;
+         margin-top: 20px;
+         font-family: $exp4;
+       }
+   }
+
+   .wlcBigFont{
+      
+      line-height: 40px;
+      
+      
+} 
+
+}
