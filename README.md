@@ -10,6 +10,3 @@
 1. Go to [http://localhost:8080]
 
 
-(Login Details)
-1. username: slypalmer15@gmail.com
-1. password: 123456789
