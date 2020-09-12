@@ -1,4 +1,5 @@
 # Description
+A Reactjs based VOD streaming service. This codebase is excerpted from the main project for the purpose of review only. Please visit www.sjinet.com to view the project in production.
 
 ## Screenshots
 
