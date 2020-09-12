@@ -1,4 +1,4 @@
-# 📦 Description
+# Description
 
 ## Screenshots
 
@@ -17,8 +17,8 @@
 ### Movies Page
 ![Sjinet_movies](https://github.com/VeniseTUTU/sjinet-lite/blob/master/docs/images/sjinet_movies.png)
 
-### Movies Page
-![Sjinet_movies](https://github.com/VeniseTUTU/sjinet-lite/blob/master/docs/images/sjinet_movies.png)
+### Player
+![Sjinet_movies](https://github.com/VeniseTUTU/sjinet-lite/blob/master/docs/images/sjinet_player.png)
 
 ### Search
 ![Sjinet_search](https://github.com/VeniseTUTU/sjinet-lite/blob/master/docs/images/sjinet_search.png)
